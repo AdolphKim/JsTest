@@ -1,0 +1,43 @@
+@import "reset.css";
+
+ul{list-style:none;}
+a{text-decoration:none; color:#333;}
+
+.wrap{padding:15px; letter-spacing:-0.5px;}
+
+.tab-box{
+    position:relative;
+}
+.tab-box .tab-list{
+    overflow:hidden;
+}
+.tab-box .tab-list .tab{
+    float : left;
+    margin-right:14px;
+}
+
+.tab-box .tab-list .tab-btn{
+    font-size:13px;
+}
+
+.tab-box .tab-list .tab-cont{
+    display:none;
+    position:absolute;
+    background-color: #555;
+    color:#fff;
+    text-align:center;
+    top:25px;
+    left:0px;
+    width:250px;
+    height:100px;
+    line-height:100px;
+}
+
+.tab-box .tab-list .tab-checked{
+    font-weight:bold;
+    color:green;
+}
+
+.tab-box .tab-list .tab-checked + .tab-cont{
+    display:block;
+}
